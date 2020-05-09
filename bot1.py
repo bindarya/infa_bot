@@ -3,9 +3,9 @@ import logging
 import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from reply_generator import classify_question
-import telepot
+"""import telepot
 
-telepot.api.set_proxy('http://1.186.40.157:39651')
+telepot.api.set_proxy('http://1.186.40.157:39651')"""
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -74,7 +74,7 @@ def get_answer():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("1108086996:AAHQxQz2uIhdQQxTyE1h_3_unfwPJFl_Dpk", use_context=True)
+    updater = Updater("TOKEN", use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
